@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { SlidersHorizontal, X, ChevronLeft, ChevronRight, Pizza } from "lucide-react";
+import { SlidersHorizontal, X, ChevronLeft, ChevronRight, Pizza as PizzaIcon } from "lucide-react";
 import { PizzaCard } from "@/components/ui/pizza-card";
 import { PizzaCardSkeleton } from "@/components/ui/skeleton";
 import { CategoryChip } from "@/components/ui/category-chip";
@@ -166,7 +166,7 @@ export default function MenuPage() {
               animate={{ opacity: 1, y: 0 }}
               className="text-center py-24"
             >
-              <div className="w-16 h-16 mb-4 mx-auto rounded-2xl bg-zinc-800 flex items-center justify-center"><Pizza className="w-8 h-8 text-orange-500" /></div>
+              <div className="w-16 h-16 mb-4 mx-auto rounded-2xl bg-zinc-800 flex items-center justify-center"><PizzaIcon className="w-8 h-8 text-orange-500" /></div>
               <h3 className="text-xl font-bold text-zinc-700 dark:text-zinc-300 mb-2">No pizzas found</h3>
               <p className="text-zinc-500">Try adjusting your filters or search.</p>
               <AnimatedButton variant="secondary" className="mt-6" onClick={() => { setSearch(""); setActiveCategory("all"); }}>
