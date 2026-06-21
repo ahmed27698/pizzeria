@@ -11,7 +11,6 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 export const metadata: Metadata = {
   title: { default: "Pizzeria — Premium Pizza Delivery", template: "%s | Pizzeria" },
   description: "Order the best handcrafted pizzas delivered fresh to your door.",
-  icons: { icon: "/favicon.ico" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
